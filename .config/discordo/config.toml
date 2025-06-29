@@ -13,12 +13,12 @@ show_attachment_links = true
 autocomplete_limit = 20
 
 # The number of messages to fetch when a text-based channel is selected from guilds tree. The minimum and maximum value is 0 and 100, respectively.
-messages_limit = 50
+messages_limit = 100
 
 [timestamps]
 enabled = true
 # https://pkg.go.dev/time#Layout
-format = "3:04PM"
+format = "2006-01-02 15:04:05"
 
 [notifications]
 enabled = true
@@ -106,7 +106,7 @@ background_color = "default"
 
 [theme.title]
 # `"left"`, `"center"`, or `"right"`.
-alignment = "left"
+alignment = "center"
 normal_style = { attributes = "dim" }
 active_style = { attributes = "bold" }
 
@@ -115,7 +115,7 @@ enabled = true
 # [top, bottom, left, right]
 padding = [0, 0, 1, 1]
 # `"plain"`, `"round"`, `"thick"`, or `"double"`.
-set = "plain"
+set = "round"
 normal_style = { attributes =  "dim" }
 active_style = { attributes = "bold" }
 
