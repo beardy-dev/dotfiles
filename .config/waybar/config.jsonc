@@ -10,24 +10,21 @@
 	"hyprland/workspaces"
     ],
     "modules-center": [
-        "hyprland/window"
+        "clock"
     ],
     "modules-right": [
 	"pulseaudio",
 	"network",
-	"cpu",
-	"memory",
-	"temperature",
 	"custom/screen_brightness",
 	"custom/kbd_brightness",
 	"battery",
-	"clock",
 	"power-profiles-daemon",
 	"custom/power"
     ],
     // Modules configuration
     "hyprland/workspaces": {
     	"active-only": false
+
     },
     "hyprland/window": {
     	"format": "{}",

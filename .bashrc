@@ -15,3 +15,4 @@ alias notify-err='hyprctl notify 3 5000 0'
 alias notify-info='hyprctl notify 1 5000 0'
 export EDITOR=vim
 PS1='\u@\h\n\A \w > '
+export PATH=$PATH:/usr/local/bin:$HOME/.local/bin
