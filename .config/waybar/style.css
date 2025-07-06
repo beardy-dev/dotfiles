@@ -7,8 +7,8 @@
 }
 
 window#waybar {
-    background-color: @base-50;
-    border-bottom: 3px solid @surface2-50;
+    background-color: @surface0-50;
+    border-bottom: 3px solid @sapphire-50;
     color: @text;
     transition-property: background-color;
     transition-duration: .5s;
@@ -47,7 +47,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px @lavender;
 }
 
 /* you can set a style on hover for any module like this */
@@ -58,25 +58,17 @@ button:hover {
     color: #ffffff;
 }
 
-#workspaces button:hover {
-    background: @sky-50;
-}
 
-#workspaces button.focused {
-    background-color: @sky;
-    box-shadow: inset 0 -3px #ffffff;
-}
 
 #workspaces button.urgent {
     background-color: @peach;
 }
 #workspaces button.active {
-    background-color: @sky;
-    box-shadow: inset 0 -3px #ffffff;
+    background-color: transparent;
+    box-shadow: inset 0 -3px @sky;
 }
 
 #mode {
-    background-color: #64727D;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -101,7 +93,7 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: @crust;
+    color: @text;
 }
 
 #window,
@@ -119,18 +111,17 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {
-    background-color: @overlay1;
+#clock{
 }
 
 #battery {
-    background-color: @surface1;
+box-shadow: inset 0 -3px @lavender;
     color: @text;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: @green;
+    color: @text;
+box-shadow: inset 0 -3px @maroon;
 }
 
 @keyframes blink {
@@ -152,105 +143,89 @@ button:hover {
 }
 
 #power-profiles-daemon {
+box-shadow: inset 0 -3px @lavender;
     padding-right: 15px;
 }
 
 #power-profiles-daemon.performance {
-    background-color: @red;
     color: @text;
 }
 
 #power-profiles-daemon.balanced {
-    background-color: @sapphire;
     color: @text;
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: @green;
     color: #000000;
 }
 
-label:focus {
-    background-color: #000000;
-}
 
 #cpu {
-    background-color: @green;
     color: #000000;
 }
 
 #memory {
-    background-color: @mauve;
 }
 
 #disk {
-    background-color: #964B00;
 }
 
 
 #network {
-    background-color: @blue;
+    background-color: transparent;
+box-shadow: inset 0 -3px @lavender;
 }
 
 #network.disconnected {
-    background-color: @red;
+box-shadow: inset 0 -3px @red;
 }
 
 #pulseaudio {
-    background-color: @yellow;
-    color: #000000;
+box-shadow: inset 0 -3px @lavender;
+    color: @text;
 }
 
 #pulseaudio.muted {
-    background-color: @maroon;
-    color: #2a5c45;
+    color: @flamingo;
 }
 
 #wireplumber {
-    background-color: @yellow;
     color: #000000;
 }
 
 #wireplumber.muted {
-    background-color: @maroon;
 }
 
 
 #custom-screen_brightness {
-	background-color: @peach;
+box-shadow: inset 0 -3px @lavender;
 }
 
 #custom-screen_brightness:hover {
-	background-color: @peach-50;
 }
 
 #custom-kbd_brightness {
-	background-color: @flamingo;
+box-shadow: inset 0 -3px @lavender;
 }
 
 #custom-kbd_brightness:hover {
-	background-color: @flamingo-50;
 }
 
 #custom-power {
-	background-color: @mantle;
+box-shadow: inset 0 -3px @lavender;
 	color: @text;
 }
 #custom-power:hover {
-	background-color: @mantle-50;
 	color: @text;
 }
 
 #temperature {
-    background-color: @peach;
 }
 
 #temperature.critical {
-    background-color: @red;
 }
 
 #tray {
-    background-color: #2980b9;
 }
 
 #tray > .passive {
@@ -259,25 +234,20 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
     color: #2d3436;
 }
 
 #mpd {
-    background-color: #66cc99;
     color: #2a5c45;
 }
 
 #mpd.disconnected {
-    background-color: #f53c3c;
 }
 
 #mpd.stopped {
