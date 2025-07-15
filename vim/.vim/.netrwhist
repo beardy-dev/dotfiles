@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/beardydev/go'
+let g:netrw_dirhist_8='/home/beardydev/.dotfiles/.config/hypr'
+let g:netrw_dirhist_7='/home/beardydev'
 let g:netrw_dirhist_6='/home/beardydev/.dotfiles'
 let g:netrw_dirhist_5='/home/beardydev/.vim'
 let g:netrw_dirhist_4='/home/beardydev/.config/kitty'
